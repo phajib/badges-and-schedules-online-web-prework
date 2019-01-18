@@ -11,9 +11,9 @@ end
 
 def assign_rooms(attendees)
   x = 0
-  attendees.each do |name|
+  attendees.map do |name|
     x += 1
-    return ["Hello, #{name}! You'll be assigned to room #{x}!"]
+    "Hello, #{name}! You'll be assigned to room #{x}!"
   end
 end
 
